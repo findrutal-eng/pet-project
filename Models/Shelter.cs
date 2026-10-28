@@ -1,0 +1,1 @@
+﻿namespace pet_project.Models; public class Shelter { public int Id{get;set;} public string Name{get;set;}=string.Empty; public string City{get;set;}=string.Empty; public string Phone{get;set;}=string.Empty; public ICollection<Pet> Pets{get;set;}=new List<Pet>(); }

@@ -1,0 +1,4 @@
+﻿@model pet_project.Models.Pet
+@{ ViewData["Title"]="Add Pet"; }<h1>Add Pet</h1><hr/><form asp-action="Create"><div asp-validation-summary="ModelOnly" class="text-danger"></div><p><label asp-for="Name"></label><input asp-for="Name" /></p><p><label asp-for="Species"></label><input asp-for="Species" /></p><p><label asp-for="Age"></label><input asp-for="Age" /></p><p><label asp-for="IsAvailable"></label><input asp-for="IsAvailable" /></p><p><label asp-for="ShelterId">Shelter Id</label><input asp-for="ShelterId" /> <small>Create a shelter first.</small></p><input type="submit" value="Create" /> <a asp-action="Index">Back to List</a></form>
+@section Scripts{@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}}
+

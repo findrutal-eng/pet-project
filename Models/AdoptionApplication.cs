@@ -1,0 +1,1 @@
+﻿namespace pet_project.Models; public class AdoptionApplication { public int Id{get;set;} public DateTime ApplicationDate{get;set;}=DateTime.Today; public string Status{get;set;}="Pending"; public int PetId{get;set;} public Pet? Pet{get;set;} public int AdopterId{get;set;} public Adopter? Adopter{get;set;} }

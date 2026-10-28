@@ -1,0 +1,3 @@
+﻿@model pet_project.Models.Shelter
+@{ ViewData["Title"]="Shelter Details"; }<h1>Shelter Details</h1><hr/><dl class="row"><dt class="col-sm-3">Name</dt><dd class="col-sm-9">@Model.Name</dd><dt class="col-sm-3">City</dt><dd class="col-sm-9">@Model.City</dd><dt class="col-sm-3">Phone</dt><dd class="col-sm-9">@Model.Phone</dd><dt class="col-sm-3">Pets</dt><dd class="col-sm-9">@Model.Pets.Count</dd></dl><a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> | <a asp-action="Index">Back to List</a>
+
